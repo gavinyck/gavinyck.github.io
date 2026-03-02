@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GGG Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, "PingFang TC", "Helvetica Neue", sans-serif;
+      background: #fffbfe;
+      color: #1c1b1f;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7C67B5 0%, #6750A4 50%, #4527A0 100%);
+      padding: 64px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      border: 50px solid rgba(255,255,255,0.06);
+      top: -150px; right: -80px;
+    }
+    .studio-name {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -1px;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.75);
+    }
+
+    main {
+      max-width: 800px;
+      margin: -40px auto 0;
+      padding: 0 24px 80px;
+      flex: 1;
+      width: 100%;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(103,80,164,0.12);
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 36px rgba(103,80,164,0.20);
+      transform: translateY(-2px);
+    }
+
+    .icon-wrap {
+      width: 80px; height: 80px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #7C67B5, #4527A0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .icon-num {
+      font-size: 22px;
+      font-weight: 100;
+      color: #fff;
+      line-height: 1;
+    }
+    .icon-label {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.8);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .card-info h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1c1b1f;
+    }
+    .card-info p {
+      margin-top: 6px;
+      font-size: 15px;
+      color: #49454f;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      background: #6750A4;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #79747e;
+      margin: 48px 0 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: #79747e;
+      border-top: 1px solid #e6e0e9;
+    }
+    footer a { color: #6750A4; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="studio-name">GGG Studio</div>
+    <h1>我們的 App</h1>
+    <p>簡單好用的日常工具</p>
+  </header>
+
+  <main>
+    <div class="section-title">應用程式</div>
+
+    <a class="card" href="https://play.google.com/store/apps/details?id=com.gggstudio.daygap" target="_blank">
+      <div class="icon-wrap">
+        <div class="icon-num">365</div>
+        <div class="icon-label">DAYS</div>
+      </div>
+      <div class="card-info">
+        <h2>DayGap</h2>
+        <p>快速計算兩個日期之間的天數，並儲存重要日期隨時追蹤倒數。</p>
+        <div class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          Google Play 下載
+        </div>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    © 2026 GGG Studio &nbsp;·&nbsp;
+    <a href="https://gavinyck.github.io/daygap-privacy/">隱私權政策</a>
+  </footer>
+
+</body>
+</html>
