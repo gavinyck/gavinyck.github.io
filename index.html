@@ -80,6 +80,7 @@
       width: 80px; height: 80px;
       border-radius: 20px;
       background: linear-gradient(145deg, #7C67B5, #4527A0);
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -123,6 +124,19 @@
       font-weight: 500;
       padding: 6px 14px;
       border-radius: 20px;
+    }
+
+    /* 流光電台用自己的環境色盤,與 DayGap 的紫色區隔 */
+    .icon-wrap.drift {
+      background: linear-gradient(145deg, #3F5FA8 0%, #24406E 55%, #1B4A52 100%);
+    }
+
+    /* 尚未上架的 App:卡片不可點,徽章改為靜態樣式 */
+    .card.pending { cursor: default; }
+    .card.pending:hover { box-shadow: 0 4px 24px rgba(103,80,164,0.12); transform: none; }
+    .badge.soon {
+      background: #e8def8;
+      color: #4527A0;
     }
 
     .section-title {
@@ -169,11 +183,31 @@
         </div>
       </div>
     </a>
+
+    <div class="card pending" style="margin-top:20px">
+      <div class="icon-wrap drift">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="#EDF2FF" aria-hidden="true">
+          <rect x="4"  y="18" width="5" height="8"  rx="2.5"/>
+          <rect x="12" y="13" width="5" height="18" rx="2.5"/>
+          <rect x="20" y="8"  width="5" height="28" rx="2.5"/>
+          <rect x="28" y="12" width="5" height="20" rx="2.5"/>
+          <rect x="36" y="17" width="5" height="10" rx="2.5"/>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h2>流光電台 <span style="font-weight:500;font-size:15px;color:#79747e">Drift Radio</span></h2>
+        <p>Android TV 上的網路電台播放器。播放時畫面是一層隨時間緩緩流動的生成式背景，
+           色調還會隨著一天的時段改變，不再是一張靜止不動的圖。</p>
+        <div class="badge soon">即將在 Google Play 上架</div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    © 2026 GGG Studio &nbsp;·&nbsp;
-    <a href="https://gavinyck.github.io/daygap-privacy/">隱私權政策</a>
+    © 2026 GGG Studio<br>
+    隱私權政策：
+    <a href="https://gavinyck.github.io/daygap-privacy/">DayGap</a> &nbsp;·&nbsp;
+    <a href="https://gavinyck.github.io/driftradio-privacy/">流光電台</a>
   </footer>
 
 </body>
