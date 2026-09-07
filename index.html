@@ -131,14 +131,6 @@
       background: linear-gradient(145deg, #3F5FA8 0%, #24406E 55%, #1B4A52 100%);
     }
 
-    /* 尚未上架的 App:卡片不可點,徽章改為靜態樣式 */
-    .card.pending { cursor: default; }
-    .card.pending:hover { box-shadow: 0 4px 24px rgba(103,80,164,0.12); transform: none; }
-    .badge.soon {
-      background: #e8def8;
-      color: #4527A0;
-    }
-
     .section-title {
       font-size: 13px;
       font-weight: 600;
@@ -184,7 +176,7 @@
       </div>
     </a>
 
-    <div class="card pending" style="margin-top:20px">
+    <a class="card" href="https://play.google.com/store/apps/details?id=com.gggstudio.tvradio" target="_blank" style="margin-top:20px">
       <div class="icon-wrap drift">
         <svg width="44" height="44" viewBox="0 0 44 44" fill="#EDF2FF" aria-hidden="true">
           <rect x="4"  y="18" width="5" height="8"  rx="2.5"/>
@@ -198,9 +190,12 @@
         <h2>流光電台 <span style="font-weight:500;font-size:15px;color:#79747e">Drift Radio</span></h2>
         <p>Android TV 上的網路電台播放器。播放時畫面是一層隨時間緩緩流動的生成式背景，
            色調還會隨著一天的時段改變，不再是一張靜止不動的圖。</p>
-        <div class="badge soon">即將在 Google Play 上架</div>
+        <div class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          Google Play 下載
+        </div>
       </div>
-    </div>
+    </a>
   </main>
 
   <footer>
