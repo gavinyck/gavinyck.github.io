@@ -131,6 +131,11 @@
       background: linear-gradient(145deg, #3F5FA8 0%, #24406E 55%, #1B4A52 100%);
     }
 
+    /* 走走用 App 圖示本身的米色底,吉祥物直接畫在裡面 */
+    .icon-wrap.walkie {
+      background: linear-gradient(145deg, #FFF6E6 0%, #FFE4B8 100%);
+    }
+
     .section-title {
       font-size: 13px;
       font-weight: 600;
@@ -155,7 +160,7 @@
   <header>
     <div class="studio-name">GGG Studio</div>
     <h1>我們的 App</h1>
-    <p>簡單好用的日常工具</p>
+    <p>讓生活更順手的小 App</p>
   </header>
 
   <main>
@@ -196,13 +201,52 @@
         </div>
       </div>
     </a>
+    <a class="card" href="https://play.google.com/store/apps/details?id=com.gggstudio.walkie" target="_blank" style="margin-top:20px">
+      <div class="icon-wrap walkie">
+        <!-- 與 App 圖示相同:只取 adaptive icon 看得到的中間 72×72 -->
+        <svg width="80" height="80" viewBox="18 18 72 72" aria-hidden="true">
+          <path d="M0,94 L108,70 L108,108 L0,108 Z" fill="#F3C98B"/>
+          <path d="M47,67 L42,80.39" fill="none" stroke="#1E2A32" stroke-width="4.2" stroke-linecap="round"/>
+          <path d="M62,66 L67,74.39" fill="none" stroke="#1E2A32" stroke-width="4.2" stroke-linecap="round"/>
+          <g transform="rotate(-12.5 42 81.39)">
+            <path d="M36.4,81.39 a5.6,3.2 0 1,0 11.2,0 a5.6,3.2 0 1,0 -11.2,0 Z" fill="#FF6B4A"/>
+          </g>
+          <g transform="rotate(-12.5 70 75.39)">
+            <path d="M64.4,75.39 a5.6,3.2 0 1,0 11.2,0 a5.6,3.2 0 1,0 -11.2,0 Z" fill="#FF6B4A"/>
+          </g>
+          <g transform="rotate(7 54 66)">
+            <path d="M35,46 Q28,55 33,62" fill="none" stroke="#1E2A32" stroke-width="3.8" stroke-linecap="round"/>
+            <path d="M34,48 a20,22 0 1,0 40,0 a20,22 0 1,0 -40,0 Z" fill="#4FD1A5"/>
+            <path d="M43,57 a12,9.5 0 1,0 24,0 a12,9.5 0 1,0 -24,0 Z" fill="#BDF2DE"/>
+            <path d="M35,39 Q54,26 73,36" fill="none" stroke="#FF6B4A" stroke-width="5.5"/>
+            <path d="M36,39 L27,34 M36,39 L28,44" fill="none" stroke="#FF6B4A" stroke-width="3.6" stroke-linecap="round"/>
+            <path d="M53.8,42 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0 Z" fill="#1E2A32"/>
+            <path d="M63.8,42 a3.2,3.2 0 1,0 6.4,0 a3.2,3.2 0 1,0 -6.4,0 Z" fill="#1E2A32"/>
+            <path d="M56.95,40.9 a1.05,1.05 0 1,0 2.1,0 a1.05,1.05 0 1,0 -2.1,0 Z" fill="#FFFFFF"/>
+            <path d="M66.95,40.9 a1.05,1.05 0 1,0 2.1,0 a1.05,1.05 0 1,0 -2.1,0 Z" fill="#FFFFFF"/>
+            <path d="M51,48.5 a3,1.9 0 1,0 6,0 a3,1.9 0 1,0 -6,0 Z" fill="#FF8FA3" fill-opacity="0.8"/>
+            <path d="M67.7,48.5 a2.6,1.9 0 1,0 5.2,0 a2.6,1.9 0 1,0 -5.2,0 Z" fill="#FF8FA3" fill-opacity="0.8"/>
+            <path d="M59.6,47.4 Q62,50.4 64.4,47.4" fill="none" stroke="#1E2A32" stroke-width="1.9" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h2>走走 <span style="font-weight:500;font-size:15px;color:#79747e">Walkie Treadmill</span></h2>
+        <p>連上藍牙走步機，坡度跟著課程自動變化。從午休 10 分鐘的輕鬆走，到象山、合歡山、玉山的虛擬登山，還有每次都不一樣的隨機課程。</p>
+        <div class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          Google Play 下載
+        </div>
+      </div>
+    </a>
   </main>
 
   <footer>
     © 2026 GGG Studio<br>
     隱私權政策：
     <a href="https://gavinyck.github.io/daygap-privacy/">DayGap</a> &nbsp;·&nbsp;
-    <a href="https://gavinyck.github.io/driftradio-privacy/">流光電台</a>
+    <a href="https://gavinyck.github.io/driftradio-privacy/">流光電台</a> &nbsp;·&nbsp;
+    <a href="https://gavinyck.github.io/walkie-privacy/">走走</a>
   </footer>
 
 </body>
